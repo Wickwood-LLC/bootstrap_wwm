@@ -251,7 +251,7 @@ a.wt-button {
 }
 @media screen and (min-width: 320px) {
   a.wt-button {
-    font-size: calc(16px + 4 * ((100vw - 320px) / 930));
+    font-size: calc(16px + 4 * (100vw - 320px) / 930);
   }
 }
 @media screen and (min-width: 1250px) {

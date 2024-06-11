@@ -285,6 +285,8 @@ figcaption {
 [data-entity-embed-display-settings*="rotated_left"] {
 	picture {
 		display: grid;
+		width: -webkit-max-content;
+		width: -moz-max-content;
 		width: max-content;
 	}
 }
@@ -293,6 +295,8 @@ figcaption {
 [data-entity-embed-display-settings*="rotated_right"] {
 	picture {
 		display: grid;
+		width: -webkit-max-content;
+		width: -moz-max-content;
 		width: max-content;
 	}
 }
@@ -578,6 +582,7 @@ nav.tabs {
 		}
 
 		.sf-sub-indicator {
+			-webkit-filter: invert(70%);
 			filter: invert(70%);
 		}
 
@@ -1815,6 +1820,16 @@ form#user-register-form {
 		margin: 1em auto;
 		display: block;
 	}
+}
+
+.chosen-container {
+	padding: 0;
+	border: 0;
+	height: auto;
+}
+
+.select-wrapper:has(.chosen-container):after {
+	display: none;
 }
 
 .path-user {

@@ -7167,7 +7167,7 @@ body {
 @media screen and (min-width: 320px) {
   html,
   body {
-    font-size: calc(16px + 4 * ((100vw - 320px) / 880));
+    font-size: calc(16px + 4 * (100vw - 320px) / 880);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -7210,7 +7210,7 @@ h1,
 @media screen and (min-width: 320px) {
   h1,
   .h1 {
-    font-size: calc(24px + 16 * ((100vw - 320px) / 880));
+    font-size: calc(24px + 16 * (100vw - 320px) / 880);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -7231,7 +7231,7 @@ h2,
 @media screen and (min-width: 320px) {
   h2,
   .h2 {
-    font-size: calc(22px + 14 * ((100vw - 320px) / 880));
+    font-size: calc(22px + 14 * (100vw - 320px) / 880);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -7252,7 +7252,7 @@ h3,
 @media screen and (min-width: 320px) {
   h3,
   .h3 {
-    font-size: calc(20px + 10 * ((100vw - 320px) / 880));
+    font-size: calc(20px + 10 * (100vw - 320px) / 880);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -7273,7 +7273,7 @@ h4,
 @media screen and (min-width: 320px) {
   h4,
   .h4 {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 6 * (100vw - 320px) / 880);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -7294,7 +7294,7 @@ h5,
 @media screen and (min-width: 320px) {
   h5,
   .h5 {
-    font-size: calc(17px + 5 * ((100vw - 320px) / 880));
+    font-size: calc(17px + 5 * (100vw - 320px) / 880);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -7315,7 +7315,7 @@ h6,
 @media screen and (min-width: 320px) {
   h6,
   .h6 {
-    font-size: calc(16px + 4 * ((100vw - 320px) / 880));
+    font-size: calc(16px + 4 * (100vw - 320px) / 880);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -7330,7 +7330,7 @@ p {
 }
 @media screen and (min-width: 320px) {
   p {
-    font-size: calc(16px + 4 * ((100vw - 320px) / 880));
+    font-size: calc(16px + 4 * (100vw - 320px) / 880);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -8444,7 +8444,7 @@ nav.tabs {
 }
 @media screen and (min-width: 320px) {
   .block-social-sharing-block .block-title {
-    font-size: calc(18px + 12 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 12 * (100vw - 320px) / 880);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -8484,7 +8484,7 @@ nav.tabs {
 }
 @media screen and (min-width: 320px) {
   .boxed > h3.block-title {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 6 * (100vw - 320px) / 880);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -8764,6 +8764,16 @@ form#user-register-form .captcha {
   max-width: 500px;
   margin: 1em auto;
   display: block;
+}
+
+.chosen-container {
+  padding: 0;
+  border: 0;
+  height: auto;
+}
+
+.select-wrapper:has(.chosen-container):after {
+  display: none;
 }
 
 .path-user .field--name-user-picture img {
