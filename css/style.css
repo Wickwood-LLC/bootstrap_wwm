@@ -7182,18 +7182,18 @@ img {
 }
 
 figure,
-.embedded-entity:not(figure > .embedded-entity) {
+.embedded-entity:not(figure > .embedded-entity, [data-entity-embed-display="view_mode:media.player"]) {
   display: table;
   margin: 1em;
 }
 figure.align-left,
-.embedded-entity:not(figure > .embedded-entity).align-left {
+.embedded-entity:not(figure > .embedded-entity, [data-entity-embed-display="view_mode:media.player"]).align-left {
   float: left;
   clear: left;
   margin-left: 0;
 }
 figure.align-right,
-.embedded-entity:not(figure > .embedded-entity).align-right {
+.embedded-entity:not(figure > .embedded-entity, [data-entity-embed-display="view_mode:media.player"]).align-right {
   float: right;
   clear: right;
   margin-right: 0;

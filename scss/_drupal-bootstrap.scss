@@ -28,7 +28,7 @@ img {
 }
 
 figure,
-.embedded-entity:not(figure > .embedded-entity) {
+.embedded-entity:not(figure > .embedded-entity, [data-entity-embed-display="view_mode:media.player"]) {
 	display: table;
 	margin: 1em;
 
