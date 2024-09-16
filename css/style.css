@@ -7358,6 +7358,7 @@ ul.contextual-links[hidden] {
 }
 
 table {
+  display: table;
   max-width: 100%;
 }
 table td,
