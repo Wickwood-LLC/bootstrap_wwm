@@ -15,7 +15,7 @@
  * @see \Drupal\bootstrap\Plugin\Preprocess\FileLink::preprocessVariables
  */
 #}
-{% spaceless %}
+{% apply spaceless %}
   {%
     set classes = [
       icon_only ? 'icon-only',
@@ -50,4 +50,4 @@
       {% endif %}
     {% endif %}
   </span>
-{% endspaceless %}
+{% endapply %}
