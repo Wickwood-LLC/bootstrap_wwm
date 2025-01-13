@@ -19,6 +19,10 @@
 	function hideLayoutRegion(region_element) {
 		var child_visible = false;
 		var region_already_visible = $(region_element).is(":visible");
+		if (!region_already_visible) {
+			// No need to hide region if already invisble.
+			return;
+		}
 		$(region_element).show();
 		var looking_for = false;
 		$(region_element)
